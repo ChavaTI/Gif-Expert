@@ -1,10 +1,19 @@
 import React, { useState } from 'react';
 
-const AddCategory = () => {
+const AddCategory = ({ addCategory }) => {
+  const [newCategory, setNewCategory] = useState('');
+  const changeCategory = (e) => {
+    setNewCategory(e.target.value);
+  };
+  const handleAdd = (e) => {
+    e.preventDefault();
+    addCategory(newCategory);
+    setNewCategory('');
+  };
   return (
-    <div>
-      <h2>Gif Expert App </h2>
-    </div>
+    <form onSubmit={handleAdd}>
+      <input type="text" onChange={changeCategory} value={newCategory} />
+    </form>
   );
 };
 
