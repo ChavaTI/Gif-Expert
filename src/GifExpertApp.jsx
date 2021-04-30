@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import AddCategory from './components/AddCategory';
+import GifGrid from './components/GifGrid';
 
 const GifExpertApp = () => {
   const initialState = ['The last air bender'];
@@ -14,7 +15,7 @@ const GifExpertApp = () => {
       <hr />
       <ol>
         {categories.map((category) => (
-          <li key={category}>{category}</li>
+          <GifGrid key={category} category={category} />
         ))}
       </ol>
     </div>
