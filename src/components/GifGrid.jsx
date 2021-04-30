@@ -6,6 +6,7 @@ const GifGrid = ({ category }) => {
   const { images, loading } = useFetchGifs(category);
   return (
     <>
+      <h4>{category}</h4>
       {loading ? (
         'Loading...'
       ) : (
