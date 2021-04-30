@@ -6,7 +6,7 @@ const GifExpertApp = () => {
   const initialState = ['The last air bender'];
   const [categories, setCategory] = useState(initialState);
   const addCategory = (newCategory) => {
-    setCategory((cats) => [...cats, newCategory]);
+    setCategory((cats) => [newCategory, ...cats]);
   };
   return (
     <div>
