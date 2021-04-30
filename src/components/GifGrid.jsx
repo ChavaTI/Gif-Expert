@@ -24,7 +24,7 @@ const GifGrid = ({ category }) => {
     getGifs();
   }, [category]);
   return (
-    <div>
+    <div className='card-grid'>
       {images.map((image) => (
         <GifGridItem key={image.id} {...image} />
       ))}
