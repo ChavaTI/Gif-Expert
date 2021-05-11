@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GifGrid tests should render correctly 1`] = `
+<Fragment>
+  <h4>
+    test
+  </h4>
+  Loading...
+</Fragment>
+`;
+
+exports[`GifGrid tests should show items when useFetchGifs hook load the data 1`] = `
+<Fragment>
+  <h4>
+    test
+  </h4>
+  <div
+    className="card-grid"
+  >
+    <GifGridItem
+      id="vPLWd7f9rDc9a"
+      key="vPLWd7f9rDc9a"
+      title="prince zuko avatar GIF"
+      url="https://media4.giphy.com/media/vPLWd7f9rDc9a/giphy.gif?cid=e78c1e51fw1h92p9pqq0zoxh5hafdb0aefh2i1gdskjvfda1&rid=giphy.gif&ct=g"
+    />
+  </div>
+</Fragment>
+`;
