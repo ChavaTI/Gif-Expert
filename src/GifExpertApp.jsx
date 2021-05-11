@@ -2,9 +2,8 @@ import React, { useState } from 'react';
 import AddCategory from './components/AddCategory';
 import GifGrid from './components/GifGrid';
 
-const GifExpertApp = () => {
-  const initialState = ['The last air bender'];
-  const [categories, setCategory] = useState(initialState);
+const GifExpertApp = ( { defaultCategories = ['Codding'] } ) => {
+  const [categories, setCategory] = useState(defaultCategories);
   const addCategory = (newCategory) => {
     setCategory((cats) => [newCategory, ...cats]);
   };
